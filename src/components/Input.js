@@ -1,6 +1,6 @@
 import { Input as NativeBaseInput, FormControl } from "native-base";
 
-const Input = ({ errorMessage, isInvalid, ...rest }) => {
+const Input = ({ errorMessage, isInvalid=true, ...rest }) => {
     const invalid = !!errorMessage || isInvalid;
 
     return (
